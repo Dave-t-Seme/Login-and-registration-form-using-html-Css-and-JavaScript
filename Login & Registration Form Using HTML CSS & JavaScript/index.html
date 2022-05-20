@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Login & Registration Form Using HTML CSS & JavaScript</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="Login_Page">
+    <div class="form">
+      <form class="Registration-form">
+      <input type="text" placeholder="Username"/>
+      <input type="text" placeholder="email"/>
+      <input type="text" placeholder="Password"/>
+      <input type="text" placeholder="Repeat Password"/>
+      <button>REGISTER</button>
+      <p class="message">Already registered?<a href="#">Login</a>
+      </p>
+      </form>
+      <form class="Login Form" >
+      <input type="text" placeholder="Username"/>
+      <input type="text" placeholder="Password"/>
+      <button>Login</button>
+      <p class="message">Not registered?<a href="#">Registration</a></p>
+    </form>
+  </div>
+  </div>
+  <script src='https://code.jquery.com/jquery-3.6.0.min.js
+''>
+  </script>
+  <script>
+    $('.message a').click(function () {
+    $('form').animate({height:"toggle", opacity: "toggle"}, "slow");
+    });
+  </script>
+  </body>
+</html>
